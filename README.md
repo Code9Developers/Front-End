@@ -28,10 +28,13 @@
 
 Let me <i>(Joshua)</i> know if you have any issues.
 
+<hr/>
+
 ### Testing
 #### Unit Testing
 * TBA
 #### Integration testing
 * TBA
+
 ---
 ><i>Feel free to change anything, just put your reason into the commit message so everyone is on the same page :)</i>
