@@ -1,5 +1,5 @@
 # Front-End
->Front End: UX for Capstone Project
+>Front End: UI for Capstone Project
 
 ### Code9; Team Members
 - Seonin David
