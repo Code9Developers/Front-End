@@ -2,7 +2,6 @@ from app import app
 import unittest
 
 class FlaskAppTests(unittest.TestCase):
-
     @classmethod
     def setUpClass(cls):
         pass
