@@ -89,10 +89,10 @@ html , body{
     background: #34495E
 }
 .daterangepicker.picker_1 .calendar-table thead tr {
-    background: #213345
+    background: #011f74
 }
 .daterangepicker.picker_1 .calendar-table thead tr:first-child {
-    background: #1ABB9C
+    background: #011f74
 }
 .daterangepicker.picker_1 .calendar-table td.off {
     background: #34495E;
@@ -102,14 +102,14 @@ html , body{
     color: #34495E
 }
 .daterangepicker.picker_2 .calendar-table thead tr {
-    color: #1ABB9C
+    color: #011f74
 }
 .daterangepicker.picker_2 .calendar-table thead tr:first-child {
     color: #73879C
 }
 .daterangepicker.picker_3 .calendar-table thead tr:first-child {
     color: #fff;
-    background: #1ABB9C
+    background: #011f74
 }
 .daterangepicker.picker_4 .calendar-table thead tr:first-child {
     color: #fff;
@@ -197,7 +197,7 @@ html , body{
 }
 .nav-sm .nav.child_menu li.active,
 .nav-sm .nav.side-menu li.active-sm {
-    border-right: 5px solid #1ABB9C
+    border-right: 5px solid #011f74
 }
 .nav-sm ul.nav.child_menu ul,
 .nav-sm .nav.side-menu li.active-sm ul ul {
@@ -206,7 +206,7 @@ html , body{
     background: none
 }
 .nav-sm>.nav.side-menu>li.active-sm>a {
-    color: #1ABB9C !important
+    color: #011f74 !important
 }
 .nav-sm .nav.side-menu li a i.toggle-up {
     display: none !important
@@ -406,7 +406,7 @@ body .container.body .right_col {
     color: #9B59B6
 }
 .green {
-    color: #1ABB9C
+    color: #011f74
 }
 .aero {
     color: #9CC2CB
@@ -424,7 +424,7 @@ body .container.body .right_col {
     border-color: #9B59B6 !important
 }
 .border-green {
-    border-color: #1ABB9C !important
+    border-color: #011f74 !important
 }
 .border-aero {
     border-color: #9CC2CB !important
@@ -441,8 +441,8 @@ body .container.body .right_col {
     color: #73879C
 }
 .bg-green {
-    background: #1ABB9C !important;
-    border: 1px solid #1ABB9C !important;
+    background: #011f74 !important;
+    border: 1px solid #011f74 !important;
     color: #fff
 }
 .bg-red {
@@ -785,7 +785,7 @@ a:focus {
 }
 .nav.side-menu>li.current-page,
 .nav.side-menu>li.active {
-    border-right: 5px solid #1ABB9C
+    border-right: 5px solid #011f74
 }
 .nav li.current-page {
     background: rgba(255, 255, 255, 0.05)
@@ -1357,7 +1357,7 @@ table.jambo_table tbody tr.selected td {
 }
 table.dataTable th.focus,
 table.dataTable td.focus {
-    outline: 2px solid #1ABB9C !important;
+    outline: 2px solid #011f74 !important;
     outline-offset: -1px
 }
 table.display {
@@ -2467,7 +2467,7 @@ textarea:focus {
 }
 .bs-glyphicons li:hover {
     color: #fff;
-    background-color: #1ABB9C
+    background-color: #011f74
 }
 @media (min-width: 768px) {
     .bs-glyphicons {
@@ -2493,7 +2493,7 @@ span.tag {
     float: left;
     padding: 5px 9px;
     text-decoration: none;
-    background: #1ABB9C;
+    background: #011f74;
     color: #F1F6F7;
     margin-right: 5px;
     font-weight: 500;
@@ -2619,7 +2619,7 @@ ul.timeline li {
 }
 .tag {
     line-height: 1;
-    background: #1ABB9C;
+    background: #011f74;
     color: #fff !important
 }
 .tag:after {
@@ -2633,7 +2633,7 @@ ul.timeline li {
     pointer-events: none;
     border-top: 14px solid transparent;
     border-bottom: 14px solid transparent;
-    border-left: 11px solid #1ABB9C
+    border-left: 11px solid #011f74
 }
 .timeline h2.title {
     position: relative;
@@ -2700,7 +2700,7 @@ ul.social li {
     border-radius: 50%
 }
 .chat .status.online {
-    background: #1ABB9C
+    background: #011f74
 }
 .chat .status.away {
     background: #F39C12
@@ -2826,7 +2826,7 @@ ul.widget_profile_box li a {
     padding: 0px
 }
 ul.widget_profile_box li a:hover {
-    color: #1ABB9C !important;
+    color: #011f74 !important;
     border: 1px solid #26b99a
 }
 ul.widget_profile_box li .profile_img {
@@ -3016,7 +3016,7 @@ ul.project_files li a i {
     background: #fff
 }
 .pricing .title {
-    background: #1ABB9C;
+    background: #011f74;
     height: 110px;
     color: #fff;
     padding: 15px 0 0;
@@ -3612,14 +3612,14 @@ header {
     width: 100%
 }
 #nprogress .bar {
-    background: #1ABB9C
+    background: #011f74
 }
 #nprogress .peg {
-    box-shadow: 0 0 10px #1ABB9C, 0 0 5px #1ABB9C
+    box-shadow: 0 0 10px #011f74, 0 0 5px #011f74
 }
 #nprogress .spinner-icon {
-    border-top-color: #1ABB9C;
-    border-left-color: #1ABB9C
+    border-top-color: #011f74;
+    border-left-color: #011f74
 }
 .editor-wrapper {
     min-height: 250px;
@@ -3888,7 +3888,7 @@ fieldset {
 }
 .wizard_horizontal ul.wizard_steps li a.done:before,
 .wizard_horizontal ul.wizard_steps li a.done .step_no {
-    background: #1ABB9C;
+    background: #011f74;
     color: #fff
 }
 .wizard_horizontal ul.wizard_steps li:first-child a:before {
@@ -3985,7 +3985,7 @@ fieldset {
 }
 .wizard_verticle ul.wizard_steps li a.done:before,
 .wizard_verticle ul.wizard_steps li a.done .step_no {
-    background: #1ABB9C;
+    background: #011f74;
     color: #fff
 }
 .wizard_verticle ul.wizard_steps li:first-child a:before {
