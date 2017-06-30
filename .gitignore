@@ -1,4 +1,4 @@
-# Created by .ignore support plugin (hsz.mobi)
-
-/UX/LICENSE.txt
-/UX/README.md
+nbproject
+npm-debug.log
+node_modules
+.sass-cache
