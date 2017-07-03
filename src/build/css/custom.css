@@ -62,7 +62,7 @@ html , body{
 }
 .daterangepicker th.available:hover {
     background: #eee;
-    color: #34495E
+    color: #342E37
 }
 .daterangepicker:before,
 .daterangepicker:after {
@@ -83,10 +83,10 @@ html , body{
 }
 .daterangepicker.picker_1 {
     color: #fff;
-    background: #34495E
+    background: #342E37
 }
 .daterangepicker.picker_1 .calendar-table {
-    background: #34495E
+    background: #342E37
 }
 .daterangepicker.picker_1 .calendar-table thead tr {
     background: #011f74
@@ -95,11 +95,11 @@ html , body{
     background: #011f74
 }
 .daterangepicker.picker_1 .calendar-table td.off {
-    background: #34495E;
+    background: #342E37;
     color: #999
 }
 .daterangepicker.picker_1 .calendar-table td.available:hover {
-    color: #34495E
+    color: #342E37
 }
 .daterangepicker.picker_2 .calendar-table thead tr {
     color: #011f74
@@ -113,7 +113,7 @@ html , body{
 }
 .daterangepicker.picker_4 .calendar-table thead tr:first-child {
     color: #fff;
-    background: #34495E
+    background: #342E37
 }
 .daterangepicker.picker_4 .calendar-table td,
 .daterangepicker.picker_4 .calendar-table td.off {
@@ -122,7 +122,7 @@ html , body{
     border-radius: 0
 }
 .daterangepicker.picker_4 .calendar-table td.active {
-    background: #34495E
+    background: #342E37
 }
 .calendar-exibit .show-calendar {
     float: none;
@@ -138,13 +138,13 @@ html , body{
     margin: 0 0 4px 0
 }
 .calendar-exibit .show-calendar.picker_1 {
-    background: #34495E
+    background: #342E37
 }
 .calendar-exibit .calendar-table {
     padding: 0 0 4px 0
 }
 .left_col {
-    background: #2A3F54
+    background: #342E37
 }
 .nav-sm .container.body .col-md-3.left_col {
     min-height: 100%;
@@ -415,7 +415,7 @@ body .container.body .right_col {
     color: #E74C3C
 }
 .dark {
-    color: #34495E
+    color: #342E37
 }
 .border-blue {
     border-color: #3498DB !important
@@ -433,7 +433,7 @@ body .container.body .right_col {
     border-color: #E74C3C !important
 }
 .border-dark {
-    border-color: #34495E !important
+    border-color: #342E37 !important
 }
 .bg-white {
     background: #fff !important;
@@ -535,7 +535,7 @@ body {
     overflow: hidden
 }
 .progress-bar-dark {
-    background-color: #34495E !important
+    background-color: #342E37 !important
 }
 .progress-bar-gray {
     background-color: #BDC3C7 !important
@@ -673,7 +673,7 @@ a:focus {
     margin-bottom: 0
 }
 .navbar-header {
-    background: #34495E
+    background: #342E37
 }
 .navbar-right {
     margin-right: 0
@@ -833,7 +833,7 @@ a:focus {
     position: relative;
     display: block;
     padding: 10px 15px;
-    color: #34495E !important
+    color: #342E37 !important
 }
 .nav>li>a:hover,
 .nav>li>a:focus {
@@ -935,7 +935,7 @@ footer {
     text-align: center
 }
 .jqstooltip {
-    background: #34495E !important;
+    background: #342E37 !important;
     width: 30px !important;
     height: 22px !important;
     text-decoration: none
@@ -3883,7 +3883,7 @@ fieldset {
 }
 .wizard_horizontal ul.wizard_steps li a.selected:before,
 .step_no {
-    background: #34495E;
+    background: #342E37;
     color: #fff
 }
 .wizard_horizontal ul.wizard_steps li a.done:before,
@@ -3980,7 +3980,7 @@ fieldset {
 }
 .wizard_verticle ul.wizard_steps li a.selected:before,
 .step_no {
-    background: #34495E;
+    background: #342E37;
     color: #fff
 }
 .wizard_verticle ul.wizard_steps li a.done:before,
