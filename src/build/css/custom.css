@@ -2617,6 +2617,7 @@ ul.timeline li {
     white-space: nowrap;
     text-overflow: ellipsis
 }
+
 .tag {
     line-height: 1;
     background: #011f74;
@@ -4121,6 +4122,12 @@ ul.notifications {
     text-transform: uppercase;
     padding: 9px 8px
 }
+
+/*#projectdescription textarea*/
+/*{*/
+    /*height: 600px;*/
+/*}*/
+
 .tabbed_notifications .text {
     padding: 5px 15px;
     height: 140px;
