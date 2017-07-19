@@ -296,67 +296,66 @@
 
       <!-- page content -->
       <div class="right_col" role="main">
-        <h2>Registration Form <small>Click to validate</small></h2>
+        <h2>Registration Form <small>Register A New User</small></h2>
         <ul class="nav navbar-right panel_toolbox">
-          <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+          <li  style="float: right" class="dropdown">
+            <a  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Settings 1</a>
               </li>
-              <li><a href="#">Settings 2</a>
-              </li>
             </ul>
-          </li>
-          <li><a class="close-link"><i class="fa fa-close"></i></a>
           </li>
         </ul>
         <div class="clearfix"></div>
         <!-- start form for validation -->
         <form id="demo-form" data-parsley-validate>
-          <h1>Create Account</h1>
           <div>
-            <input type="text" class="form-control" placeholder="Employee ID" required="" />
+            <label for="empid">Employee ID: *</label>
+            <input id="empid" name="empid" type="text" class="form-control" placeholder="Employee ID" required="" />
           </div>
           <div>
-            <input type="text" class="form-control" placeholder="Name" required="" />
+            <label for="firstname">First Name: *</label>
+            <input id="firstname" name="firstname" type="text" class="form-control" placeholder="Name" required="" />
           </div>
           <div>
-            <input type="text" class="form-control" placeholder="Surname" required="" />
-          </div>
-          <div>
-            <input type="email" class="form-control" placeholder="Email" required="" />
-          </div>
-          <div>
-            <input type="password" class="form-control" placeholder="Password" required="" />
-          </div>
-          <div>
-            <input type="password" class="form-control" placeholder="Confirm Password" required="" />
+            <label for="lastname">Last Name: *</label>
+            <input id="lastname" name="lastname" type="text" class="form-control" placeholder="Surname" required="" />
           </div>
           <div class="form-group">
-            <label class="control-label">Skill Tags</label>
-            <input id="tags_1" type="text" class="tags form-control" value="MS Office, Accounting Skills, Auditor" data-parsley-trigger="change" required  />
-          </div>
-          <div class="form-group">
-            <label for="role list">Role: </label>
-            <select class="form-control" id="role list">
+            <label for="rolelist">Role: *</label>
+            <select class="form-control" id="rolelist">
               <option>Employee</option>
               <option>Manager</option>
               <option>Admin</option>
             </select>
           </div>
           <div>
-             <label class="control-label">Past Projects</label>
-            <input id="tags_2" type="text" class="tags form-control" value="MS Office, Accounting Skills, Auditor" data-parsley-trigger="change" required  />
+            <label for="email">Email: *</label>
+            <input id="email" name="email" type="email" class="form-control" placeholder="Email" required="" />
           </div>
+          <div>
+            <label for="password">Password: *</label>
+            <input id="password" name="password" type="password" class="form-control" placeholder="Password" required="" />
+          </div>
+          <div>
+            <label for="confirmpassword">Confirm Password: *</label>
+            <input id="confirmpassword" name="confirmpassword" type="password" class="form-control" placeholder="Confirm Password" required="" />
+          </div>
+          <div class="form-group">
+            <label class="control-label">Skill Tags</label>
+            <input id="tags_1" name="skills" type="text" class="tags form-control" value="MS Office, Accounting Skills, Auditor" data-parsley-trigger="change" required  />
+          </div>
+
+          <div class="form-group">
+            <label  class="control-label">Past Projects</label>
+            <input id="" name="pastprojects" type="text" class="tags form-control" value="MS Office, Accounting Skills, Auditor" data-parsley-trigger="change" required  />
+          </div>
+
           <div>
             <a class="btn btn-default submit" href="index.html">Submit</a>
           </div>
 
           <div class="clearfix"></div>
-
-
         </form>
         <!-- end form for validations -->
       </div>
@@ -412,6 +411,8 @@
   <!-- bootstrap-daterangepicker -->
   <script src="vendors/moment/min/moment.min.js"></script>
   <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <!-- jQuery Tags Input -->
+  <script src="vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
 
 
   <!-- Custom Theme Scripts -->
