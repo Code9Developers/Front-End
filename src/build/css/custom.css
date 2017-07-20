@@ -2114,7 +2114,7 @@ button,
 }
 .compose .compose-header {
     padding: 5px;
-    background: #169F85;
+    background: #011f74;
     color: #fff;
     border-top-left-radius: 5px
 }
@@ -2828,7 +2828,7 @@ ul.widget_profile_box li a {
 }
 ul.widget_profile_box li a:hover {
     color: #011f74 !important;
-    border: 1px solid #26b99a
+    border: 1px solid #011f74
 }
 ul.widget_profile_box li .profile_img {
     width: 85px;
@@ -4010,7 +4010,7 @@ fieldset {
     background-color: #3498DB
 }
 .progress-bar-success {
-    background-color: #26B99A
+    background-color: #011f74
 }
 .progress_summary .progress {
     margin: 5px 0 12px !important
