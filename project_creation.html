@@ -55,6 +55,10 @@
     <link href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
     <link href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
     <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <!-- Ion.RangeSlider -->
+    <link href="vendors/normalize-css/normalize.css" rel="stylesheet">
+    <link href="vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="src/build/css/custom.min.css" rel="stylesheet">
@@ -319,8 +323,23 @@
             <div class="clearfix"></div>
             <!-- start form for validation -->
             <form id="demo-form" data-parsley-validate>
-                <label for="projectname">Project Name * :</label>
-                <input type="text" id="projectname" class="form-control" name="projectname" required />
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="projectname">Project Name * :</label>
+                        <input type="text" id="projectname" class="form-control" name="projectname" required />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label>Project Date * :</label>
+                        <br/>
+                        <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                            <span>December 30, 2016 - January 28, 2099</span> <b class="caret"></b>
+                        </div>
+                    </div>
+                </div>
+
                 <br/>
                 <div class="row">
                     <div class="col-md-6">
@@ -337,8 +356,15 @@
                 </div>
 
                 <!--TODO Fix employee allocation format Make it a table on click-->
+                <!-- TODO ask KPMG about min team size-->
                 <!-- Employees-->
                 <label>Employee Allocation</label><br/>
+
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <label>Number of Employees *</label>
+                    <input type="text" id="range_31" value="" min="0" name="numemp" />
+                </div>
+
                 <a class="btn btn-app" id="employeeallocator">
                     <span class="badge bg-green" id="assignEmpCount"></span>
                     <i class="fa fa-users"></i> Assign Employees
@@ -1111,6 +1137,8 @@
 <script src="vendors/jszip/dist/jszip.min.js"></script>
 <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
 <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
+<!-- Ion.RangeSlider -->
+<script src="vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
 
 <!-- Custom Theme Scripts -->
 <script src="src/build/js/custom.min.js"></script>
