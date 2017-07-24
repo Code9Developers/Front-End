@@ -234,7 +234,7 @@
         </ul>
         <div class="clearfix"></div>
         <!-- start form for validation -->
-        <form id="demo-form" data-parsley-validate>
+        <form id="demo-form" data-parsley-validate action="register_employee" method="post">
           <div class="row">
             <div class="col-md-6">
               <label for="empid">Employee ID: *</label>
@@ -249,7 +249,7 @@
               </select>
             </div>
           </div>
-          <div class="row">
+          <div class="row" style="margin-bottom: 10px">
             <div class="col-md-6">
               <label for="firstname">First Name: *</label>
               <input id="firstname" name="firstname" type="text" class="form-control" placeholder="Name" required="" />
@@ -259,13 +259,28 @@
               <input id="lastname" name="lastname" type="text" class="form-control" placeholder="Surname" required="" />
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
+          <div class="row" style="margin-bottom: 10px">
+            <div class="col-md-6">
               <label for="email">Email: *</label>
               <input id="email" name="email" type="email" class="form-control" placeholder="Email" required="" />
             </div>
+            <div class="col-md-3">
+              <label for="emplength">Employment Length (in years): *</label>
+              <input id="emplength" name="emplength" type="number" class="form-control" placeholder="Employment Length" required="" />
+            </div>
+            <div class="col-md-3">
+              <label for="positionlist">Position: *</label>
+              <select class="form-control" id="positionlist">
+                <option>Senior Analyst</option>
+                <option>Junior Analyst</option>
+                <option>Senior Auditor</option>
+                <option>Junior Auditor</option>
+                <option>Web Developer</option>
+                <option>Accountant</option>
+              </select>
+            </div>
           </div>
-          <div class="row">
+          <div class="row" style="margin-bottom: 10px">
             <div class="col-md-6">
               <label for="pastprojects">Past Projects: *</label>
               <textarea id="pastprojects" name="pastprojects" rows="4" required="required" class="form-control" placeholder="MS Office, Accounting Skills, Auditor. Comma separated"></textarea>
@@ -276,7 +291,7 @@
             </div>
           </div>
           <div>
-            <a class="btn btn-default submit" href="index.html">Submit</a>
+            <a class="btn btn-dark submit" href="index.html">Submit</a>
           </div>
 
           <div class="clearfix"></div>
