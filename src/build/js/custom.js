@@ -1522,8 +1522,8 @@ function init_skycons(){
 			$("#range_31").ionRangeSlider({
 			  type: "double",
 			  min: 0,
-			  max: 100,
-			  from: 30,
+			  max: 50,
+			  from: 0,
 			  to: 70,
 			  from_fixed: true
 			});

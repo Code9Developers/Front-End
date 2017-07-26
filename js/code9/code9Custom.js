@@ -1,7 +1,3 @@
-/**
- * Created by Nicaedin on 2017/07/24.
- */
-
 $(document).ready(function() {
 
     <!--This is where we add our own functions-->
@@ -19,12 +15,6 @@ $(document).ready(function() {
 
     });
 
-    $('#approveEmployee').on('click', function (e) {
-        e.preventDefault(); // disable the default form submit event
-        window.alert("Employee Improved");
-
-    });
-
     $('#removeEmployee').on('click', function (e) {
         e.preventDefault(); // disable the default form submit event
         window.alert("Employee Removed");
@@ -34,6 +24,5 @@ $(document).ready(function() {
     $('#createProjectbtn').on('click', function (e) {
         e.preventDefault(); // disable the default form submit event
         window.alert("Project Created");
-
     });
 });

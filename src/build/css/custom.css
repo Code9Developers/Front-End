@@ -4,6 +4,11 @@ html , body{
  height:100%;
  
 }
+
+#removeEmployee
+{
+    background: red;
+}
  
 .full-width {
 	

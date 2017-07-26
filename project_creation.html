@@ -290,16 +290,26 @@
                 <!-- TODO ask KPMG about min team size-->
                 <!-- Employees-->
                 <label>Employee Allocation</label><br/>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <label>No. of Employees: *</label>
+                        <input type="number" id="numemp" value="" min="0" name="numemp" placeholder="Other amount" />
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
 
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <label>No. of Employees: *</label>
-                    <input id="numemp" type="number" class="form-control"  value="" min="0" name="numemp" />
-                </div>
-                <div class="col-md-6">
+                        <input type="text" id="range_31" value="" name="numemp" />
+                        <br/>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <label>Project Budget: *</label><br/><span> R</span>
+                        <input name="budget" type="number" min="0.00" step="0.01" placeholder="0,00" />
+                    </div>
+                    <div class="col-md-3">
                     <span class="docs-tooltip" data-toggle="tooltip" title="Click to generate employees">
                             <span class="docs-tooltip badge bg-green" id="assignEmpCount"></span>
                              <button id="assignEmployees" type="button" class="fa fa-users">Allocate Employees</button>
                     </span>
+                    </div>
                 </div>
 
                 <!-- TODO show this table once button is clicked-->
@@ -393,8 +403,7 @@
                                 </tr>
                                 </tbody>
                             </table>
-                            <button id="approveEmployee" style="float: right" type="button" class="btn-round btn-dark docs-tooltip" data-toggle="tooltip" title="Approve generated employees">Approve Selection</button>
-                            <button id="removeEmployee" style="float: left" type="button" class="btn-round btn-danger docs-tooltip" data-toggle="tooltip" title="Remove selected employee/employees from project">Remove Selection</button>
+                            <button id="removeEmployee" type="button" class="docs-tooltip btn-danger btn-round" data-toggle="tooltip" title="Remove selected employee/employees from project">Remove Selection</button>
                         </div>
                     </div>
                 </div>
