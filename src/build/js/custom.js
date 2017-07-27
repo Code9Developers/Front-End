@@ -944,6 +944,8 @@ function init_skycons(){
 			}
 
 }
+
+// TODO button style and validation start - SEO
 /* PARSLEY */
 			
 		function init_parsley() {
@@ -990,6 +992,8 @@ function init_skycons(){
 			  } catch (err) {}
 
 }
+
+// TODO button style and validation send - SEO
 /* INPUTS */
 		  
 			function onAddTag(tag) {
@@ -1487,6 +1491,7 @@ function init_skycons(){
 				$('.demo-auto').colorpicker();
 
 }
+// TODO slider style change start - SEO
 /* ION RANGE SLIDER */
 			
 		function init_IonRangeSlider() {
@@ -1556,6 +1561,8 @@ function init_skycons(){
 			});
 
 }
+// TODO slider style change end - SEO
+
 /* DATERANGEPICKER */
 	   
 		function init_daterangepicker() {
