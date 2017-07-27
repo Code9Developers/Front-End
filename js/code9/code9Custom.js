@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(document).ready(function()
+{
 
     <!--This is where we add our own functions-->
     $('#assignEmployees').on('click', function (e) {

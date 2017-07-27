@@ -954,7 +954,7 @@ function init_skycons(){
 			$/*.listen*/('parsley:field:validate', function() {
 			  validateFront();
 			});
-			$('#demo-form .btn').on('click', function() {
+			$('#demo-form .btn-conf').on('click', function() {
 			  $('#demo-form').parsley().validate();
 			  validateFront();
 			});
@@ -971,7 +971,7 @@ function init_skycons(){
 			$/*.listen*/('parsley:field:validate', function() {
 			  validateFront();
 			});
-			$('#demo-form2 .btn').on('click', function() {
+			$('#demo-form2 .btn-conf').on('click', function() {
 			  $('#demo-form2').parsley().validate();
 			  validateFront();
 			});
@@ -1005,17 +1005,25 @@ function init_skycons(){
 			  }
 
 			  //tags input
-			function init_TagsInput() {
+			function init_TagsInput()
+			{
 				  
-				if(typeof $.fn.tagsInput !== 'undefined'){	
-				 
-				$('#tags_1').tagsInput({
-				  width: 'auto'
-				});
-				
+				if(typeof $.fn.tagsInput !== 'undefined')
+				{
+					$('#tags_1').tagsInput({
+					  width: 'auto'
+					});
 				}
 
-    }
+				// TODO add more input tags
+                if(typeof $.fn.tagsInput !== 'undefined')
+                {
+                    $('#tags_2').tagsInput({
+                        width: 'auto'
+                    });
+                }
+
+    		}
 /* SELECT2 */
 	  
 		function init_select2() {
@@ -1524,7 +1532,7 @@ function init_skycons(){
 			  min: 0,
 			  max: 50,
 			  from: 0,
-			  to: 70,
+			  to: 50,
 			  from_fixed: true
 			});
 			$(".range_min_max").ionRangeSlider({
