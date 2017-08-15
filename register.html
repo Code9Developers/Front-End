@@ -50,7 +50,7 @@
     <!-- bootstrap-daterangepicker -->
     <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
     <!-- bootstrap Tags -->
-    <link href="vendors/bootstrap/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css" rel="stylesheet">
+    <link href="vendors/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="src/build/css/custom.min.css" rel="stylesheet">
@@ -262,9 +262,13 @@
             </div>
           </div>
           <div class="row" style="margin-bottom: 10px">
-            <div class="col-md-6">
+            <div class="col-md-3">
               <label for="email">Email: *</label>
               <input id="email" name="email" type="email" class="form-control" placeholder="Email" required="" />
+            </div>
+            <div class="col-md-3">
+              <label class="control-label">Contact Number: *</label>
+              <input type="text" class="form-control" data-inputmask="'mask' : '(999) 999 - 9999'" data-parsley-trigger="change" required >
             </div>
             <div class="col-md-3">
               <label for="emplength">Employment Length (in years): *</label>
@@ -318,7 +322,7 @@
   <!-- Bootstrap -->
   <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- Bootstrap Tags -->
-  <script src="vendors/bootstrap/bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.min.js"></script>
+  <script src="vendors/bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.min.js"></script>
   <!-- FastClick -->
   <script src="vendors/fastclick/lib/fastclick.js"></script>
   <!-- NProgress -->
@@ -356,6 +360,8 @@
   <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
   <!-- jQuery Tags Input -->
   <script src="vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+  <!-- jquery.inputmask -->
+  <script src="vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
 
 
   <!-- Custom Theme Scripts -->
