@@ -248,6 +248,24 @@
                 <!--</li>-->
             <!--</ul>-->
             <div class="clearfix"></div>
+            <!-- start form for validation -->
+            <form id="demo-form" data-parsley-validate action="milestone-creation" method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="milename">Milestone Name: *</label>
+                        <input type="text" id="milename" class="form-control" name="milename" required />
+                    </div>
+                    <div class="col-md-4">
+                        <label>End Date: </label>
+                        <input class="form-control" type="date" required/>
+                    </div>
+                    <div class="col-md-4">
+                        <button style="margin-top: 23px" id="createMile" class="btn btn-conf btn-dark docs-tooltip" data-toggle="tooltip" title="Create Milestone">Create Milestone</button>
+                    </div>
+                </div>
+            </form>
+            <br/>
+            <!-- end form for validations -->
             <div class="row">
                 <div class="col-md-8">
                     <div id="echart_line" style="height:350px;"></div>
@@ -256,11 +274,9 @@
                     <div class="x_panel">
                         <div class="x_title">
                             <h2>Milestones</h2>
-
                             <div class="clearfix"></div>
                         </div>
                         <div class="x_content">
-
                             <div class="">
                                 <ul class="to_do">
                                     <li>
@@ -293,23 +309,6 @@
                     </div>
                 </div>
             </div>
-            <!-- start form for validation -->
-            <form id="demo-form" data-parsley-validate action="milestone-creation" method="post">
-                <div class="row">
-                    <div class="col-md-5">
-                        <label for="milename">Milestone Name: *</label>
-                        <input type="text" id="milename" class="form-control" name="milename" required />
-                    </div>
-                    <div class="col-md-offset-1 col-md-5">
-                        <label>End Date: </label>
-                        <input class="form-control" type="date" required/>
-                    </div>
-                </div>
-
-                <br/>
-                <button id="createMile" class="btn btn-conf btn-dark docs-tooltip" data-toggle="tooltip" title="Create Milestone">Create Milestone</button>
-            </form>
-            <!-- end form for validations -->
         </div>
         <!-- /page content -->
 
