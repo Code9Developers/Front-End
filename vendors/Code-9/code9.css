@@ -1,3 +1,5 @@
+/* TO DO List*/
+
 .todolist{
     background-color:#FFF;
     padding:20px 20px 10px 20px;
@@ -37,4 +39,19 @@ li.ui-state-default:last-child{
 }
 #checkAll{
     margin-top:10px;
+}
+
+/* New Button def*/
+.btn-kpmg
+{
+    color: #fff;
+    background-color: #204d74;
+    border-color: #122b40;
+}
+
+.btn-kpmg:hover
+{
+    color: white;
+    background-color: #193455;
+    border-color: #204c72;
 }
