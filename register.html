@@ -49,6 +49,8 @@
     <link href="vendors/starrr/dist/starrr.css" rel="stylesheet">
     <!-- bootstrap-daterangepicker -->
     <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- bootstrap Tags -->
+    <link href="vendors/bootstrap/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="src/build/css/custom.min.css" rel="stylesheet">
@@ -223,15 +225,15 @@
       <div class="right_col" role="main">
         <h2>Registration Form <small>Register A New User</small></h2>
         <hr/>
-        <ul class="nav navbar-right panel_toolbox">
-          <li  style="float: right" class="dropdown">
-            <a  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Settings 1</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <!--<ul class="nav navbar-right panel_toolbox">-->
+          <!--<li  style="float: right" class="dropdown">-->
+            <!--<a  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>-->
+            <!--<ul class="dropdown-menu" role="menu">-->
+              <!--<li><a href="#">Settings 1</a>-->
+              <!--</li>-->
+            <!--</ul>-->
+          <!--</li>-->
+        <!--</ul>-->
         <div class="clearfix"></div>
         <!-- start form for validation -->
         <form id="demo-form" data-parsley-validate action="register_employee" method="post">
@@ -281,9 +283,9 @@
             </div>
           </div>
           <div class="row" style="margin-bottom: 10px">
-            <div class="col-md-6">
-              <label for="pastprojects">Past Projects: *</label>
-              <textarea id="pastprojects" name="pastprojects" rows="4" required="required" class="form-control" placeholder="MS Office, Accounting Skills, Auditor. Comma separated"></textarea>
+            <div class="form-group col-md-6">
+              <label class="control-label">Past Projects: *</label>
+              <input id="tags_2" name="pastprojects" type="text" data-role="tagsinput" class="tags form-control" placeholder="add a tag" value="Standard Bank Audit"/>
             </div>
             <div class="form-group col-md-6">
               <label class="control-label">Skill Tags: *</label>
@@ -315,6 +317,8 @@
   <script src="vendors/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap -->
   <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Bootstrap Tags -->
+  <script src="vendors/bootstrap/bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.min.js"></script>
   <!-- FastClick -->
   <script src="vendors/fastclick/lib/fastclick.js"></script>
   <!-- NProgress -->

@@ -1827,6 +1827,8 @@ function init_skycons(){
 		});
 
   }
+
+  // TODO more notifications
 /* PNotify */
 			
 		function init_PNotify() {
@@ -1857,6 +1859,8 @@ function init_skycons(){
 			});
 
 }
+
+// TODO notifications start
 /* CUSTOM NOTIFICATION */
 			
 		function init_CustomNotification() {
@@ -2386,6 +2390,7 @@ function init_charts() {
 			});
 
 }
+// TODO calendar details
 /* CALENDAR */
 		  
 		    function  init_calendar() {

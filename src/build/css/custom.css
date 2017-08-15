@@ -2525,6 +2525,7 @@ span.tag a {
     color: #000;
     outline: 0px
 }
+
 .tagsinput div {
     display: block;
     float: left
@@ -2628,6 +2629,7 @@ ul.timeline li {
     background: #011f74;
     color: #fff !important
 }
+
 .tag:after {
     content: " ";
     height: 30px;
