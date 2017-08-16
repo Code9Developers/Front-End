@@ -40,6 +40,8 @@
     <link href="vendors/Code-9/code9.css" rel="stylesheet">
     <!-- Dropzone.js -->
     <link href="vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+    <!-- Bootstrap Multi-select-->
+    <link href="vendors/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" rel="stylesheet"/>
 
     <!-- Custom Theme Style -->
     <link href="src/build/css/custom.min.css" rel="stylesheet">
@@ -267,65 +269,46 @@
                       <div id="mainb" style="height:350px;"></div>
 
                       <div>
-                        <!-- end of user messages -->
-                        <!--<ul class="messages">-->
-                          <!--<li>-->
-                            <!--<img src="images/default_user.png" class="avatar" alt="Avatar">-->
-                            <!--<div class="message_date">-->
-                              <!--<h3 class="date text-info">24</h3>-->
-                              <!--<p class="month">May</p>-->
-                            <!--</div>-->
-                            <!--<div class="message_wrapper">-->
-                              <!--<h4 class="heading">Desmond Davison</h4>-->
-                              <!--<blockquote class="message">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>-->
-                              <!--<br />-->
-                              <!--<p class="url">-->
-                                <!--<span class="fs1 text-info" aria-hidden="true" data-icon=""></span>-->
-                                <!--<a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>-->
-                              <!--</p>-->
-                            <!--</div>-->
-                          <!--</li>-->
-                          <!--<li>-->
-                            <!--<img src="images/default_user.png" class="avatar" alt="Avatar">-->
-                            <!--<div class="message_date">-->
-                              <!--<h3 class="date text-error">21</h3>-->
-                              <!--<p class="month">May</p>-->
-                            <!--</div>-->
-                            <!--<div class="message_wrapper">-->
-                              <!--<h4 class="heading">Brian Michaels</h4>-->
-                              <!--<blockquote class="message">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>-->
-                              <!--<br />-->
-                              <!--<p class="url">-->
-                                <!--<span class="fs1" aria-hidden="true" data-icon=""></span>-->
-                                <!--<a href="#" data-original-title="">Download</a>-->
-                              <!--</p>-->
-                            <!--</div>-->
-                          <!--</li>-->
-                          <!--<li>-->
-                            <!--<img src="images/default_user.png" class="avatar" alt="Avatar">-->
-                            <!--<div class="message_date">-->
-                              <!--<h3 class="date text-info">24</h3>-->
-                              <!--<p class="month">May</p>-->
-                            <!--</div>-->
-                            <!--<div class="message_wrapper">-->
-                              <!--<h4 class="heading">Desmond Davison</h4>-->
-                              <!--<blockquote class="message">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>-->
-                              <!--<br />-->
-                              <!--<p class="url">-->
-                                <!--<span class="fs1 text-info" aria-hidden="true" data-icon=""></span>-->
-                                <!--<a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>-->
-                              <!--</p>-->
-                            <!--</div>-->
-                          <!--</li>-->
-                        <!--</ul>-->
-                        <!--<div class="row">-->
                         <div class="panel">
                           <div class="col-md-6">
                             <div class="todolist not-done">
-                              <h1>Todos</h1>
-                              <input type="text" class="form-control add-todo" placeholder="Add todo">
-                              <button id="checkAll" class="btn btn-dark">Mark all as done</button>
-                              <hr>
+                              <h1>Create Todos</h1>
+                              <div class="form-group">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                  <input type="text" class="form-control add-todo" placeholder="Add todo">
+                                </div>
+                              </div>
+                              <hr/>
+                              <div class="form-group">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                  <select type="text" class="form-control">
+                                    <optgroup label="Milestones">
+                                      <option disabled selected>Select Milestone</option>
+                                      <option>Choose option</option>
+                                    </optgroup>
+                                  </select>
+                                </div>
+                              </div>
+                              <hr/>
+                              <br/>
+                              <div class="form-group">
+                                <div class="col-md-12 col-sm-12">
+                                  <select id="AllocateTask" class="multiselect-ui form-control" multiple="multiple">
+                                    <option value="cheese">Cheese</option>
+                                    <option value="tomatoes">Tomatoes</option>
+                                    <option value="mozarella">Mozzarella</option>
+                                    <option value="mushrooms">Mushrooms</option>
+                                    <option value="pepperoni">Pepperoni</option>
+                                    <option value="onions">Onions</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <button style="margin-left: 10px; margin-top: 10px" id="submit-task" class="btn btn-dark">Create Task</button>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="todolist not-done">
+                              <h1>Current Todos</h1>
                               <ul id="sortable" class="list-unstyled">
                                 <li class="ui-state-default">
                                   <div class="checkbox">
@@ -351,19 +334,17 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="todolist">
-                              <h1>Already Done</h1>
-                              <ul id="done-items" class="list-unstyled">
-                                <li>Some item <button class="remove-item btn btn-default btn-xs pull-right"><span class="glyphicon glyphicon-remove"></span></button></li>
-
-                              </ul>
-                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                          <hr/>
+                          <div class="todolist" style="border-right: none">
+                            <h1>Completed</h1>
+                            <ul id="done-items" class="list-unstyled">
+                              <li>Some item <button class="remove-item btn btn-default btn-xs pull-right"><span class="glyphicon glyphicon-remove"></span></button></li>
+                            </ul>
                           </div>
                         </div>
                         <!-- end of user messages -->
-
-
                       </div>
 
 
@@ -471,13 +452,34 @@
     <script src="vendors/nprogress/nprogress.js"></script>
     <!-- ECharts -->
     <script src="vendors/echarts/dist/echarts.min.js"></script>
-    <!-- Code 9 -->
-    <script src="vendors/Code-9/code9.js"></script>
     <!-- Dropzone.js -->
     <script src="vendors/dropzone/dist/min/dropzone.min.js"></script>
+    <!-- Include the plugin's CSS and JS: -->
+    <script src="vendors/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
 
     <!-- Custom Theme Scripts -->
+    <!-- Code 9 -->
+    <script src="vendors/Code-9/code9.js"></script>
     <script src="src/build/js/custom.min.js"></script>
+
+
+  <!-- TEST SCRIPT-->
+  <script>
+      function addCombo() {
+          var textb = document.getElementById("txtCombo");
+          var combo = document.getElementById("combo");
+
+          var option = document.createElement("option");
+          option.text = textb.value;
+          option.value = textb.value;
+          try {
+              combo.add(option, null); //Standard
+          }catch(error) {
+              combo.add(option); // IE only
+          }
+          textb.value = "";
+      }
+  </script>
 
   </body>
 </html>
