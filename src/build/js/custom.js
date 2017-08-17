@@ -5014,9 +5014,6 @@ function init_charts() {
 	   
 	   
 	$(document).ready(function() {
-
-
-
 		init_sparklines();
 		init_flot_chart();
 		init_sidebar();
