@@ -36,7 +36,6 @@
     <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- Animate.css -->
     <link href="vendors/animate.css/animate.min.css" rel="stylesheet">
-
     <!-- iCheck -->
     <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
     <!-- bootstrap-wysiwyg -->
@@ -51,9 +50,11 @@
     <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
     <!-- bootstrap Tags -->
     <link href="vendors/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css" rel="stylesheet">
-
+    <!-- Bootstrap Multi-select-->
+    <link href="vendors/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" rel="stylesheet"/>
     <!-- Custom Theme Style -->
-    <link href="src/build/css/custom.min.css" rel="stylesheet">
+    <link href="src/build/css/custom.min.css" rel="stylesheet"/>
+
   </head>
   <body class="nav-md">
   <div class="container body">
@@ -288,9 +289,16 @@
           </div>
           <div class="row" style="margin-bottom: 10px">
             <div class="form-group col-md-6">
-              <label class="control-label">Past Projects: *</label>
-              <input id="tags_2" name="pastprojects" type="text" data-role="tagsinput" class="tags form-control" placeholder="add a tag" value="Standard Bank Audit"/>
-            </div>
+                            <label class="control-label">Past Projects: *</label>
+                            <select id="pastprojects" class="multiselect-ui form-control" multiple="multiple">
+                                <option value="cheese">Cheese</option>
+                                <option value="tomatoes">Tomatoes</option>
+                                <option value="mozarella">Mozzarella</option>
+                                <option value="mushrooms">Mushrooms</option>
+                                <option value="pepperoni">Pepperoni</option>
+                                <option value="onions">Onions</option>
+                            </select>
+                        </div>
             <div class="form-group col-md-6">
               <label class="control-label">Skill Tags: *</label>
               <input id="tags_1" name="skills" type="text" class="tags form-control" value="MS Office, Accounting Skills, Auditor" data-parsley-trigger="change" required  />
@@ -362,10 +370,15 @@
   <script src="vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
   <!-- jquery.inputmask -->
   <script src="vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
-
-
   <!-- Custom Theme Scripts -->
   <script src="src/build/js/custom.min.js"></script>
+  <script src="vendors/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+    <!-- jQuery -->
+  <script src="vendors/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <!-- Custom Theme Scripts -->
+  <!-- Code 9 -->
+  <script src="vendors/Code-9/code9.js"></script>
 
   </body>
 </html>
+
