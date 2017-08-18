@@ -68,6 +68,7 @@ Downloadify.create('downloadify',{
 ...
   dataType: 'base64'
 });
+
 ```
 
 <!--
