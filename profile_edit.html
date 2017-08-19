@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>KPMG | Project</title>
+        <title>KPMG | Profile Edit </title>
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="57x57" href="images/favicon.ico/apple-icon-57x57.png">
@@ -32,31 +32,35 @@
         <link href="vendors/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
         <!-- Font Awesome -->
         <link href="vendors/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-        <!-- Code 9-->
-        <link href="vendors/Code-9/code9.css" type="text/css" rel="stylesheet">
-        <!-- NProgress: Top load animation -->
+        <!-- NProgress: Top load animation-->
         <link href="vendors/nprogress/nprogress.css" type="text/css" rel="stylesheet">
+        <!-- Bootstrap daterangepicker-->
+        <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" type="text/css" rel="stylesheet">
+        <!-- Bootstrap progressbar-->
+        <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.2.min.css" type="text/css" rel="stylesheet">
+        <!--Code 9-->
+        <link href="vendors/Code-9/code9.css" type="text/css" rel="stylesheet">
         <!-- Custom Theme Style -->
         <link href="src/build/css/custom.min.css" type="text/css" rel="stylesheet">
     </head>
 
     <body class="nav-md">
-	    <div class="container body">
+        <div class="container body">
             <div class="main_container">
-		        <div class="col-md-3 left_col">
-		            <div class="left_col scroll-view">
+                <div class="col-md-3 left_col">
+                    <div class="left_col scroll-view">
                         <!-- KPMG Logo Side Bar-->
                         <div class="navbar nav_title" style="border: 0;">
                             <a href="index.html" class="site_title"><img src="images/logo/KPMG_Square_White.png" width="55px" height="55px"></a>
-			            </div>
+                        </div>
 
-			            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
 
                         <!-- menu profile quick info -->
                         <div class="profile clearfix">
                             <div class="profile_pic">
-                                <img src="images/default_user.png" alt="..." class="img-circle profile_img">
-                            </div>
+                            <img src="images/default_user.png" alt="..." class="img-circle profile_img">
+                          </div>
                             <div class="profile_info">
                                 <span>Welcome,</span>
                                 <h2>John Doe</h2>
@@ -64,23 +68,21 @@
                         </div>
                         <!-- /menu profile quick info -->
 
-			            <br />
+                        <br />
 
                         <!-- sidebar menu -->
                         <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                             <div class="menu_section">
                                 <h3>General</h3>
                                 <ul class="nav side-menu">
-                                    <li>
-                                        <a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                                    <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                                         <ul class="nav child_menu">
                                             <li><a href="index.html">Dashboard<span class="label label-success pull-right">Coming Soon</span></a></li>
                                             <li><a href="inbox.html">Inbox <span class="label label-success pull-right">Coming Soon</span></a></li>
                                             <li><a href="calendar.html">Calendar<span class="label label-success pull-right">Coming Soon</span></a></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <a><i class="fa fa-user"></i> Admin <span class="fa fa-chevron-down"></span></a>
+                                    <li><a><i class="fa fa-user"></i> Admin <span class="fa fa-chevron-down"></span></a>
                                         <ul class="nav child_menu">
                                             <li><a href="register.html">Register User</a></li>
                                             <li><a href="profile.html">Profile <span class="label label-success pull-right">Coming Soon</span></a></li>
@@ -109,7 +111,7 @@
                         </div>
                         <!-- /menu footer buttons -->
                     </div>
-		        </div>
+                </div>
 
                 <!-- top navigation -->
                 <div class="top_nav">
@@ -118,6 +120,7 @@
                             <div class="nav toggle">
                                 <a id="menu_toggle"><i class="fa fa-bars"></i></a>
                             </div>
+
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="">
                                     <a href="javascript:" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -126,11 +129,17 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-usermenu pull-right">
                                         <li><a href="javascript:"> Profile</a></li>
-                                        <li><a href="javascript:"><span class="badge bg-red pull-right">50%</span><span>Settings</span></a></li>
+                                        <li>
+                                            <a href="javascript:">
+                                            <span class="badge bg-red pull-right">50%</span>
+                                            <span>Settings</span>
+                                            </a>
+                                        </li>
                                         <li><a href="javascript:">Help</a></li>
                                         <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                                     </ul>
                                 </li>
+
                                 <li role="presentation" class="dropdown">
                                     <a href="javascript:" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                                         <i class="fa fa-envelope-o"></i>
@@ -138,12 +147,18 @@
                                     </a>
                                     <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                                         <li>
-                                            <a><span class="image"><img src="images/default_user.png" alt="Profile Image" /></span><span><span>John Smith</span><span class="time">3 mins ago</span></span>
+                                            <a>
+                                                <span class="image"><img src="images/default_user.png" alt="Profile Image" /></span>
+                                                <span>
+                                                    <span>John Smith</span>
+                                                    <span class="time">3 mins ago</span>
+                                                </span>
                                                 <span class="message">
-                                                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
                                                 </span>
                                             </a>
                                         </li>
+
                                         <li>
                                             <div class="text-center">
                                                 <a>
@@ -165,7 +180,7 @@
                     <div class="">
                         <div class="page-title">
                             <div class="title_left">
-                                <h3>All Projects</h3>
+                                <h3>User Profile Editor</h3>
                             </div>
 
                             <div class="title_right">
@@ -183,125 +198,126 @@
                         <div class="clearfix"></div>
 
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="x_panel">
                                     <div class="x_title">
-                                        <h2>Projects</h2>
-                                        <ul class="nav navbar-right panel_toolbox">
-                                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
-                                            <li style="float: right"><a href="project_creation.html" type="button" class="btn btn-default"><span class="docs-tooltip" data-toggle="tooltip" title="New Project"><i class="fa fa-plus"></i></span></a></li>
-                                        </ul>
+                                        <h2>Welcome Back!</h2>
+                                        <!--<ul class="nav navbar-right panel_toolbox">-->
+                                            <!--<li style="float:right"><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>-->
+                                            <!--&lt;!&ndash;<li class="dropdown">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<ul class="dropdown-menu" role="menu">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<li><a href="#">Settings 1</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<li><a href="#">Settings 2</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<li><a class="close-link"><i class="fa fa-close"></i></a></li>&ndash;&gt;-->
+                                        <!--</ul>-->
                                         <div class="clearfix"></div>
-                                     </div>
+                                    </div>
                                     <div class="x_content">
-                                        <p>Project dashboard view or all project including editing & milestone options</p>
+                                        <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
+                                            <div class="profile_img">
+                                                <div id="crop-avatar">
+                                                    <!-- Current avatar -->
+                                                    <img class="img-responsive avatar-view" src="images/picture.jpg" alt="Avatar" title="Change the avatar">
+                                                </div>
+                                            </div>
+                                            <h3>Samuel Doe</h3>
 
-                                        <!-- start project list -->
-                                        <table class="table table-striped projects">
-                                            <thead>
-                                                <tr>
-                                                    <th style="width: 1%">#</th>
-                                                    <th style="width: 20%">Project Name</th>
-                                                    <th>Team Members</th>
-                                                    <th>Project Progress</th>
-                                                    <th>Status</th>
-                                                    <th style="width: 20%">Options</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <!--JQuery start-->
-                                                <tr>
-                                                    <td>#</td>
-                                                    <td>
-                                                        <a>Pesamakini Backend UI 1</a>
-                                                        <br />
-                                                        <small>Created 01.01.2015</small>
-                                                    </td>
-                                                    <!-- User icon indicator-->
-                                                    <td>
-                                                        <ul class="list-inline">
-                                                            <li>
-                                                                <img src="images/user.png" class="avatar" alt="Avatar">
-                                                            </li>
-                                                            <li>
-                                                                <img src="images/user.png" class="avatar" alt="Avatar">
-                                                            </li>
-                                                            <li>
-                                                                <img src="images/user.png" class="avatar" alt="Avatar">
-                                                            </li>
-                                                            <li>
-                                                                <img src="images/user.png" class="avatar" alt="Avatar">
-                                                            </li>
-                                                            <li>
-                                                                <img src="images/user.png" class="avatar" alt="Avatar">
-                                                            </li>
-                                                            <li>
-                                                                <img src="images/user.png" class="avatar" alt="Avatar">
-                                                            </li>
-                                                            <li>
-                                                                <img src="images/user.png" class="avatar" alt="Avatar">
-                                                            </li>
-                                                        </ul>
-                                                    </td>
-                                                    <!-- Project Progress-->
-                                                    <td class="project_progress">
-                                                        <div class="progress progress_sm">
-                                                            <div class="progress-bar bg-kpmg-bar" role="progressbar" data-transitiongoal="57"></div>
-                                                        </div>
-                                                        <small>57% Complete</small>
-                                                    </td>
-                                                    <!-- Project Status-->
-                                                    <td>
-                                                    <!--
-                                                    btn-warning - Ongoing
-                                                    btn-danger - Pending
-                                                    btn-success - Complete
-                                                    -->
-                                                        <button type="button" class="btn btn-kpmg btn-xs">Ongoing</button>
-                                                    </td>
-                                                    <td>
-                                                        <a href="project_detail.html" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View </a>
-                                                        <a href="project_milestone.html" class="btn btn-warning btn-xs"><i class="fa fa-trophy"></i> Milestones </a>
-                                                        <a href="project_edit.html" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit </a>
-                                                        <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete </a>
-                                                    </td>
-                                                </tr>
-                                                 <!-- JQuery End-->
-                                            </tbody>
-                                        </table>
-                                        <!-- end project list -->
+                                            <ul class="list-unstyled user_data">
+                                                <li><i class="fa fa-map-marker user-profile-icon"></i> San Francisco, California, USA</li>
+                                                <li>
+                                                    <i class="fa fa-briefcase user-profile-icon"></i> Software Engineer
+                                                </li>
+                                                <li class="m-top-xs">
+                                                    <i class="fa fa-external-link user-profile-icon"></i>
+                                                    <a href="http://www.kimlabs.com/profile/" target="_blank">www.kimlabs.com</a>
+                                                </li>
+                                            </ul>
+
+                                            <a class="btn btn-kpmg"><i class="fa fa-user m-right-xs"></i> Edit Profile Picture</a>
+                                            <br />
+
+                                            <!-- start skills -->
+                                            <h4>Skills</h4>
+                                            <ul class="list-unstyled user_data">
+                                                <li>
+                                                    <p>Web Applications</p>
+                                                    <div class="progress progress_sm">
+                                                        <div class="progress-bar bg-kpmg-bar" role="progressbar" data-transitiongoal="50"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p>Website Design</p>
+                                                    <div class="progress progress_sm">
+                                                        <div class="progress-bar bg-kpmg-bar" role="progressbar" data-transitiongoal="70"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p>Automation & Testing</p>
+                                                    <div class="progress progress_sm">
+                                                        <div class="progress-bar bg-kpmg-bar" role="progressbar" data-transitiongoal="30"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p>UI / UX</p>
+                                                    <div class="progress progress_sm">
+                                                        <div class="progress-bar bg-kpmg-bar" role="progressbar" data-transitiongoal="50"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <!-- end of skills -->
+                                        </div>
+
+                                        <div class="col-md-9 col-sm-9 col-xs-12">
+                                            <div class="profile_title">
+                                                <div class="col-md-6">
+                                                    <h2>Edit Your Personal Details Here</h2>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <form>
+                                                        <!--TODO Form to edit-->
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-		        <!-- /page content -->
+            </div>
+            <!-- /page content -->
 
-                <!-- footer content -->
-                <footer>
-                    <div class="pull-right">
-                        Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-                    </div>
-                    <div class="clearfix"></div>
-                </footer>
-                <!-- /footer content -->
-	        </div>
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
         </div>
 
         <!-- jQuery -->
         <script type="text/javascript" src="vendors/jquery/dist/jquery.min.js"></script>
-        <!-- jQuery UI -->
-        <script type="text/javascript" src="vendors/jquery-ui-1.12.1/jquery-ui.min.js"></script>
         <!-- Bootstrap -->
         <script type="text/javascript" src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!-- bootstrap-progressbar -->
-        <script type="text/javascript" src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
         <!-- FastClick: Increase load time-->
         <script type="text/javascript" src="vendors/fastclick/lib/fastclick.js"></script>
         <!-- NProgress: Top load animation-->
         <script type="text/javascript" src="vendors/nprogress/nprogress.js"></script>
+        <!-- bootstrap-progressbar -->
+        <script type="text/javascript" src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+        <!-- bootstrap-daterangepicker -->
+        <script type="text/javascript" src="vendors/moment/min/moment.min.js"></script>
+        <script type="text/javascript" src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
         <!-- Custom Theme Scripts -->
         <script type="text/javascript" src="src/build/js/custom.min.js"></script>
-	</body>
+  </body>
 </html>
