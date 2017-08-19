@@ -57,7 +57,7 @@
                     <div class="left_col scroll-view">
                         <!-- KPMG Logo Side Bar-->
                         <div class="navbar nav_title" style="border: 0;">
-                            <a href="index.html" class="site_title"><img src="images/logo/KPMG_Square_White.png" width="55px" height="55px"></a>
+                            <a href="index_dashboard.html" class="site_title"><img src="images/logo/KPMG_Square_White.png" width="55px" height="55px"></a>
                         </div>
 
                         <div class="clearfix"></div>
@@ -83,7 +83,7 @@
                                 <ul class="nav side-menu">
                                     <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                                         <ul class="nav child_menu">
-                                            <li><a href="index.html">Dashboard<span class="label label-success pull-right">Coming Soon</span></a></li>
+                                            <li><a href="index_dashboard.html">Dashboard<span class="label label-success pull-right">Coming Soon</span></a></li>
                                             <li><a href="inbox.html">Inbox <span class="label label-success pull-right">Coming Soon</span></a></li>
                                             <li><a href="calendar.html">Calendar<span class="label label-success pull-right">Coming Soon</span></a></li>
                                         </ul>
@@ -105,7 +105,7 @@
                             <a data-toggle="tooltip" data-placement="top" title="Settings">
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                             </a>
-                            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <a data-toggle="tooltip" data-placement="top" title="Full Screen" onclick="toggleFullScreen();">
                                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
                             </a>
                             <a data-toggle="tooltip" data-placement="top" title="Lock">
@@ -454,6 +454,7 @@
         <script type="text/javascript" src="vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
         <!-- Code 9 -->
         <script type="text/javascript" src="js/code9/code9Custom.js"></script>
+        <script type="text/javascript" src="vendors/Code-9/fullscreen.js"></script>
         <!-- Parsley -->
         <script type="text/javascript" src="vendors/parsleyjs/dist/parsley.min.js"></script>
         <!-- Moment for some reason is needed for the tags in this one  -->
