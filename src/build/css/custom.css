@@ -3560,9 +3560,9 @@ form:after {
 .login_content form input[type="password"]:focus {
     -ms-box-shadow: 0 0 2px #ed1c24 inset;
     -o-box-shadow: 0 0 2px #ed1c24 inset;
-    box-shadow: 0 0 2px #A97AAD inset;
+    box-shadow: 0 0 2px #011f74 inset;
     background-color: #fff;
-    border: 1px solid #A878AF;
+    border: 1px solid #011f74;
     outline: none
 }
 #username {
