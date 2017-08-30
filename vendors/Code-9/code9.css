@@ -123,3 +123,23 @@ span.multiselect-native-select select {
     margin-left: -20px;
     margin-right: 0
 }
+
+/* Tasks Profile page style*/
+.profile_page_task_list li p
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.task_date
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.t_date
+{
+    font-style: italic;
+}
