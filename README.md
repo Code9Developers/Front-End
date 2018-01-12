@@ -1,3 +1,5 @@
+# ARCHIVED 2017 COS 301 Project - No Longer Maintained
+
 # Front-End
 >Front End: UI for Capstone Project
 
